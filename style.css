@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+  background-color: #11232a;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  max-height: fit-content;
+  align-items: center;
+  justify-content: center;
+  padding:15px;
+  margin:auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: #fff;
+  padding: 16px 25px;
+  gap: 8px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px #000;
+}
+
+.container h1 {
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form .form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form .form-control label {
+  font-size: 15px;
+  font-weight: 450;
+}
+
+.form .form-control sup {
+  color:red;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form input:focus {
+  border: 1px solid #11232a;
+}
+
+.form .correct {
+  border: 2px solid darkgreen;
+}
+
+.form .incorrect {
+  border: 2px solid red;
+}
+
+.form .form-control .error {
+  height: 25px;
+  font-size: 13px;
+  color: red;
+}
+
+.form #submit {
+  background-color: darkblue;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 100%;
+  }
+}
